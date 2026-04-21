@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{float}
+\usepackage[brazil]{babel}
+
+\title{Exemplo de Artigo no Formato SBC com Figura e Citações}
+
+\author{Vitória Kélren Félix Farias}
+
+\address{Instituto de Computação (IComp) -- Universidade Federal do Amazonas (UFAM)\\Av. Gen. Rodrigo Octávio,
+6200, Coroado I,
+Setor Norte\\
+69080-900 -- Manaus -- AM -- Brasil
+\email{vitoria.farias@icomp.ufam.edu.br}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Este artigo apresenta um exemplo simples de uso do template da SBC no Overleaf, incluindo inserção de figura, uso de citações bibliográficas e arquivo .bib.
+\end{abstract}
+
+\begin{resumo}
+Este documento mostra como estruturar um texto acadêmico em \LaTeX\ no formato da SBC, inserindo imagem, referências bibliográficas e citações no corpo do texto.
+\end{resumo}
+
+\section{Introdução}
+
+O \LaTeX\ é amplamente utilizado na escrita de textos científicos e acadêmicos, especialmente em áreas como Computação, Matemática e Engenharia. Segundo \cite{knuth1984}, ele oferece alta qualidade tipográfica e grande controle sobre a estrutura do documento.
+
+Além disso, a escrita acadêmica em Computação frequentemente exige a inserção de figuras, tabelas, algoritmos e referências bibliográficas. O template da SBC já oferece uma base adequada para esse tipo de produção.
+
+\section{Inclusão de Figura}
+
+A Figura~\ref{fig:exemplo} apresenta uma imagem de exemplo incluída no documento. No seu projeto, a imagem deve estar salva com o nome \texttt{cameraman.png}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{cameraman.png}
+\caption{Imagem de exemplo incluída no artigo}
+\label{fig:exemplo}
+\end{figure}
+
+Como discutido por \cite{lamport1994}, o uso correto de elementos gráficos melhora a clareza e a apresentação do texto acadêmico.
+
+\section{Referências e Citações}
+
+As citações bibliográficas podem ser feitas com o comando \texttt{\textbackslash cite}. Por exemplo, podemos citar um livro clássico de \LaTeX\ \cite{lamport1994} e também a obra de Knuth \cite{knuth1984}.
+
+No template da SBC, as referências são inseridas com:
+
+\begin{verbatim}
+\bibliographystyle{sbc}
+\bibliography{referencias} (referencias é o nome do teu arquivo .bib)
+\end{verbatim}
+
+Esse formato aparece no modelo da Overleaf da SBC.
+
+\section{Conclusão}
+
+Este exemplo apresentou a estrutura básica de um artigo no formato SBC com inclusão de figura, uso de citações e arquivo bibliográfico externo. Esse tipo de organização é útil para relatórios, artigos e trabalhos acadêmicos em Computação.
+
+\bibliographystyle{sbc}
+\bibliography{referencias}
+
+\end{document}
